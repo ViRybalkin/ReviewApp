@@ -12,7 +12,13 @@ function init(){
         if (!myMap.balloon.isOpen()) {
             var coords = e.get('coords');
             myMap.balloon.open(coords, {
-                contentHeader:'ОПА ты кликнул',
+                contentHeader:[`<div class="review_block">
+                <h3>Отзыв:</h3>
+                <input type="text" class="input" placeholder="Укажите ваше имя">
+                <input type="text" class="input" placeholder="Укажите место">
+                <textarea class="review" placeholder="Оставить отзыв"></textarea>
+                <button class="btn">Добавить</button>
+                </div>`]
             });
         }
         else {
