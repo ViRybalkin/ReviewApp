@@ -1,46 +1,68 @@
-*{
-  box-sizing: border-box;
-}
-body{
-  margin: 0;
+body {
   padding: 0;
+  margin: 0;
 }
-#map{
+
+#map {
   width: 100%;
   height: 100vh;
 }
-.review_block{
+
+.review_block {
+  background: white;
   width: 350px;
-  height: 350px;
-}
-.input{
-  width: 300px;
-  height: 38px;
-  margin-bottom: 20px;
-  outline: none;
-  padding-left: 10px;
-  padding-top: 5px;
-}
-.input::placeholder{
-  color: black;
-}
-.review{
-  width: 300px;
-  padding-left: 10px;
-  padding-top: 10px;
-  height: 98px;
-  margin-bottom: 28px;
-  outline: none;
-}
-.review::placeholder{
-  color: black;
+  border-radius: 5px;
+  display: none;
+  z-index: 1;
+  position: absolute;
+  transition: 0.3s;
 }
 
-.btn{
-  font-size: 14px;
+.window__header {
   color: white;
-  width: 107px;
-  height: 38px;
-  background: #FF8663;
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close_btn {
+  font-size: 15px;
+  cursor: pointer;
+  background: none;
+  outline: none;
   border: none;
+}
+
+.review_text {
+  margin: 0 10px;
+  width: 95%;
+  font-size: 15px;
+}
+
+.form__header {
+  margin: 0 0 0 10px;
+}
+
+.input {
+  margin: 5px 10px 20px 10px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.input__text {
+  border-radius: 5px;
+  width: 300px;
+  height: 98px;
+}
+
+.add_btn {
+  height: 30px;
+  width: 90px;
+  margin: 7px;
+  border-radius: 5px;
+  background-color: #fa7d4d;
+  color: white;
+  border: 0 solid white;
+  cursor: pointer;
 }
