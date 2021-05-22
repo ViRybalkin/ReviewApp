@@ -5,26 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ReviewApp</title>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   <div id="map"></div>
-
-  <div class="review_block">
-    <div class="window__header">
-      <div class="place""></div>
-      <button class="close_btn">x</button>
-    </div>
-    <div class="review_text""></div>
-    <div class="form__wrap">
-      <h3 class="form__header">Отзыв:</h3>
-      <input type="text"  class="input input__name" placeholder="Ваше имя"/>
-      <input type="text"  class="input input__place" placeholder="Укажите место"/>
-      <textarea  class="input input__text" placeholder="Оставьте отзыв"></textarea>
-      <button class="add_btn""><b>Добавить</b></button>
-    </div>
-  </div>
-
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" ></script>
   <script src="./js/ymaps.js"></script>
 </body>
